@@ -18,21 +18,24 @@
 
 
     <link rel="stylesheet" href="src/css/app.css">
-</head>
-<body>
-<my-app>Loading...</my-app>
 
-<script>
+  <script>
     System.config({
-        packages: {
-            app: {
-                format: 'register',
-                defaultExtension: 'js'
-            }
+      packages: {
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
         }
+      }
     });
     System.import('app/boot')
-            .then(null, console.error.bind(console));
-</script>
+      .then(null, console.error.bind(console));
+  </script>
+
+</head>
+
+<base href="/">
+<body>
+<my-app>Loading...</my-app>
 </body>
 </html>
